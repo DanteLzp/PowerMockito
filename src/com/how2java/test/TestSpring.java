@@ -15,7 +15,6 @@ import com.how2java.pojo.A;
 import com.how2java.pojo.B;
 import com.how2java.pojo.C;
 
- 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "/applicationContext.xml")
 public class TestSpring {
@@ -30,14 +29,11 @@ public class TestSpring {
 	   @Mock
 	   C c;
 	   
-	   
-	 
 	   @Before
 	   public void myBefore() {
 	       MockitoAnnotations.initMocks(this);
 	   }
 
- 
     @Test
     public void test(){
     	PowerMockito.when(c.getValue()).thenReturn(666);
