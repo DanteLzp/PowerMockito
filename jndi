@@ -1,3 +1,6 @@
 https://stackoverflow.com/questions/5940895/how-to-test-a-mocked-jndi-datasource-with-spring
 https://stackoverflow.com/questions/9183321/how-to-use-jndi-datasource-provided-by-tomcat-in-spring
 https://stackoverflow.com/questions/5941523/if-i-create-a-spring-datasource-do-i-still-need-to-define-the-datasource-inside
+传统Spring测试带来的问题：
+1.导致Spring容器多次初始化，代价太高。
+2.不应由测试代码管理SPring容器，而应该由Spring容器管理测试代码
